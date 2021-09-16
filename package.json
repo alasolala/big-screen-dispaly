@@ -1,0 +1,32 @@
+{
+  "name": "big-screen-display",
+  "version": "1.0.0",
+  "description": "Big screen display components library!",
+  "main": "./dist/bs-display-umd.js",
+  "module": "./dist/bs-display-es.js",
+  "scripts": {
+    "dev": "eslint ./src && rollup -wc rollup.dev.js",
+    "lint": "eslint ./src",
+    "build": "eslint ./src && rollup -c rollup.prod.js --exports named"
+  },
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "author": "Alaso",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "autoprefixer": "^8.0.0",
+    "rollup": "^2.38.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-vue": "^5.1.9",
+    "sass": "^1.32.6",
+    "vue-template-compiler": "^2.6.12",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

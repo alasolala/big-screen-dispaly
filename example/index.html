@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body,#app {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <bsd-frame><div>大屏内容</div></bsd-frame>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="../dist/bs-display-umd.js"></script>
+<script>
+    new Vue({
+        el: '#app'
+    })
+</script>
+</html>
